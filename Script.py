@@ -684,9 +684,9 @@ special Thanks To ❤️ Developers -
 
 -Dev 2 <a href='https://t.me/i_am_yamraj'>Yamraj</a>
 
--Dev 3 <a href='https://t.me/vj_botz>Jᴏᴇʟ </> TɢX</a>
+-Dev 3 <a href='https://t.me/i_am_yamraj>Jᴏᴇʟ </> TɢX</a>
 
-- Dev 4 <a href='https://t.me/vj_bots'>TEAM VJ</a>
+- Dev 4 <a href='https://t.me/NeonGhost_Networks'>TEAM VJ</a>
 """
 
 
