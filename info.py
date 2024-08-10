@@ -18,8 +18,8 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '27352735'))
-API_HASH = environ.get('API_HASH', '8c4512c1052a60e05b05522a2ea12e5e')
+API_ID = int(environ.get('API_ID', '24955235'))
+API_HASH = environ.get('API_HASH', 'f317b3f7bbe390346d8b46868cff0de8')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
@@ -37,20 +37,20 @@ CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHAN
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1837294444').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
-auth_channel = environ.get('AUTH CHANNEL',  '-1002097822007')
+auth_channel = environ.get('AUTH CHANNEL',  '-1001980994910')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', 'NewGroup4Movies')
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002097822007')
+support_chat_id = environ.get('SUPPORT_CHAT_ID', 'NG_Support_Chat')
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1001980994910')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Cluster0:Cluster0@cluster0.c07xkuf.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "vjbotzdemo")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+DATABASE_NAME = environ.get('DATABASE_NAME', "newbot")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegraam_files')
 
 # Premium And Referal Settings
 REFERAL_COUNT = int(environ.get('REFERAL_COUNT', '20')) # number of referal count
@@ -71,8 +71,8 @@ MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/NG_Support_Chat')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/NeonGhost_Networks')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/NeonGhost_Networks')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/NeonGhost_Network')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/NeonGhost_Network')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Hello My Dear Friends ❤️')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002034727890'))
